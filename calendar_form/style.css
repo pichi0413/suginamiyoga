@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+/*土曜の文字色*/
+.youbi_6{
+	color:#36F!important;
+}
+/*祝日と日曜の文字色*/
+.youbi_0,.shukujitu{
+	color:red!important;
+}
+/*本日の背景色　※ただし設定ファイルでの設定が優先されます*/
+.today{
+	background:#FF9;	
+}
+/*休業日設定した日の背景色　※ただし設定ファイルでの設定が優先されます*/
+.holiday{
+	background:#FDD;	
+}
+/*定休日設定した日の背景色　※ただし設定ファイルでの設定が優先されます*/
+.closed{
+	background:#FDD;	
+}
+.hidden{
+	display:none;	
+}
+/*休業日テキスト部の左側の四角*/
+.holidayCube{
+	display:inline-block;
+	width:13px;
+	height:13px;
+	margin:3px 3px 0 3px;
+	position:relative;
+	top:2px;
+}
+/*定休日テキスト部の左側の四角*/
+.closedCube{
+	display:inline-block;
+	width:13px;
+	height:13px;
+	margin:3px 3px 0 3px;
+	position:relative;
+	top:2px;
+}
+/*---------------------------------
+			index.php 
+---------------------------------*/
+
+/* Calender style */
+
+#calenderTable{
+	width:100%;	
+	font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	border-collapse:collapse;
+}
+#calenderTable th{
+	padding:5px;
+	font-size:12px;
+	border:1px solid #ccc;
+	color:#333;
+	background:#eee;
+}
+#calenderTable td{
+	padding:5px;
+	text-align:right;
+	font-size:12px;
+	border:1px solid #ccc;
+	color:#555;
+	width:14%;
+	vertical-align:top;
+}
+#calenderTable .calenderHeader a{
+	color:#555;
+	text-decoration:none;
+}
+
+#calenderTable td .scheduleComment{
+	text-align:left;
+	color:#555;
+	font-size:10px;
+}
+#calenderTable td .schedulePulldownList{
+	text-align:left;
+	color:#555;
+	font-size:10px;
+	padding:0px 0 3px;
+	border-bottom:1px dotted #ccc;
+}
+#calenderTable .borderless{
+	border:0!important
+}
+.countNum{
+	font-size:110%;
+}
+p.holidayText{
+	font-size:12px!important;
+	color:#444;
+	margin:0;
+	padding:0 0 5px;
+}
+
+
+/* if ListStyle */
+ul#calenderList{
+	list-style:none;
+	margin:0;
+	padding:0;
+	font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+#calenderList li{
+	border-bottom:1px solid #999;
+	padding:5px;
+}
+#calenderList li.first-child{
+	border-top:1px solid #999;
+}
+#calenderList .scheduleComment{
+	text-align:left;
+	color:#555;
+	font-size:10px;
+}
+#calenderList .schedulePulldownList{
+	text-align:left;
+	color:#555;
+	font-size:11px;
+	padding:0px 0 3px;
+	border-bottom:1px dotted #aaa;
+}
+table.navNextPrev {
+	width:100%;
+}
+table.navNextPrev .dspPrev{
+	text-align:left;	
+	padding:10px;
+}
+table.navNextPrev .dspNext{
+	text-align:right;
+	padding:10px;
+}
+h2#headerYm{
+	background:#666;
+	color:#fff;
+	text-align:center;
+	padding:5px ;
+	font-size:110%;
+	font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+/* /if ListStyle */
+
+
+/* Reserv Btn styl*/
+.reservForm{
+	display:inline;	
+}
+.reservForm input{
+	font-size:12px;
+	cursor:pointer;
+	font-family:"ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	padding:1px 2px;
+}
+/* /Reserv Btn styl*/
+
+/* ReservForm Style */
+
+#formWrap {
+	width:650px;
+	margin:10px auto;
+	color:#555;
+	line-height:120%;
+	font-size:90%;
+	font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+#formWrap h2{
+	font-weight:normal;
+	font-size:14px;
+	color:#111;
+	margin:0 0 10px;
+	background:#efefef;
+	padding:5px 8px 3px;
+	border-radius:3px;
+	border:1px solid #ccc;
+}
+#formWrap p {
+	margin:0 0 5px;
+	padding:0;
+	font-size:13px;
+}
+
+table.formTable {
+	width:100%;
+	margin:15px auto;
+	border-collapse:collapse;
+}
+table.formTable td, table.formTable th {
+	border:1px solid #ccc;
+	padding:10px;
+	font-size:90%;
+}
+table.formTable th {
+	width:30%;
+	font-weight:normal;
+	background:#efefef;
+	text-align:left;
+}
+/*---------------------------------
+		/index.php style 
+---------------------------------*/
